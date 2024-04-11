@@ -48,7 +48,7 @@ internal class Rammer : Tank
             Accelerate(1);
             RotateTowards(tankToTarget.Location);
             RotateTurretTowards(tankToTarget.Location);
-            Shout(tankToTarget.Location.ToString());
+            Shout("Attacking " + tankToTarget.Name);
         }            
     }
 }
