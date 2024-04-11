@@ -42,10 +42,11 @@ internal class Rammer : Tank
     {
         if(otherTanks.Length != 0)
         {
+            Tank tankToTarget = otherTanks[0].Location;
             Accelerate(1);
-            RotateTowards(otherTanks[0].Location);
-            RotateTurretTowards(otherTanks[0].Location);
-            Shout(targetLoc.ToString());
+            RotateTowards(tankToTarget.Location);
+            RotateTurretTowards(tankToTarget.Location);
+            Shout(tankToTarget.Location.ToString());
         }            
     }
 }
