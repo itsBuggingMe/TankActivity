@@ -1,5 +1,6 @@
 ## API ##
-All tanks extend from the `Tank` class. Two functions are overridden: `Update(Tank[] otherTanks)` and `Initalize()`
+All tanks extend from the `Tank` class. Two functions are overridden: `Update(Tank[] otherTanks)` and `Initalize()`.
+`Update(Tank[] otherTanks)` is called every frame, 60 times a second.
 
 The `Tank` class provides these methods to control your tank:
 ```csharp
