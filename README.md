@@ -40,13 +40,13 @@ internal class Rammer : Tank
 
     public override void Update(Tank[] otherTanks)
     {
-        if(otherTanks.Length == 0)
-            return;
-            
-        Accelerate(1);
-        RotateTowards(otherTanks[0].Location);
-        RotateTurretTowards(otherTanks[0].Location);
-        Shout(targetLoc.ToString());
+        if(otherTanks.Length != 0)
+        {
+            Accelerate(1);
+            RotateTowards(otherTanks[0].Location);
+            RotateTurretTowards(otherTanks[0].Location);
+            Shout(targetLoc.ToString());
+        }            
     }
 }
 ```
