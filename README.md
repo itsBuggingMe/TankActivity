@@ -14,6 +14,8 @@ Accelerate(float power);
 RotateTowards(Vector2 location);
 // Similar but only rotates turret
 RotateTurretTowards(Vector2 location);
+// Places the text above the tank. Useful for debugging.
+Shout("Hello, World");
 ```
 Each tank also has a set of public fields:
 ```csharp
